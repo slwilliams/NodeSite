@@ -1,0 +1,34 @@
+extends layout
+
+block content
+  center
+    h1= title
+    #small2
+      p.
+        slw69&#64;cam.ac.uk
+    #git
+      p.
+        https://github.com/slwilliams
+    p Powered by Express and Nodejs
+    #small
+      p.
+        public boolean isRunning()<br>
+        {<br>
+        &#160;&#160;return isRunning();<br>
+        }<br>
+    #centering2 
+      img(src='images/glider.png')
+    #centering 
+      img(src='images/me2.jpg')
+    //#centering3
+      iframe(width='560', height='315', src='https://www.youtube.com/embed/R9Yd4Fyq1qo', frameborder='0', allowfullscreen)
+  script(type='text/javascript')
+    $(document).ready(function() { 
+        $("h1, p, #centering, #centering2").box2d({'restitution':0.7, 'y-velocity':15});
+        //$("#centering3").box2d({});
+        //$("#centering3_snatched").remove();
+        //$("#circle").box2d({'shape':'circle'});
+        $(".perfect.bodysnatcher").eq(2).click(function() {
+          window.location.href = "https:\/\/github.com/slwilliams/";
+      });
+    });
